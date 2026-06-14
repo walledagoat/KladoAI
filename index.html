@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klado AI — AI that feels effortless</title>
+  <meta name="description" content="Klado AI is a new intelligent workspace for ideas, agents, and modern work. Launching soon." />
+  <meta name="theme-color" content="#f7f9ff" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="aurora aurora-three"></div>
+    <div class="glass-wave wave-one"></div>
+    <div class="glass-wave wave-two"></div>
+    <div class="grain"></div>
+  </div>
+
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <main class="shell">
+    <nav class="topbar liquid-panel reveal" style="--d: .05s">
+      <a class="brand" href="#" aria-label="Klado AI home">
+        <img src="klado-logo.png" alt="" class="brand-mark" />
+        <span>Klado</span>
+      </a>
+
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Coming soon
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="logo-stage reveal" style="--d: .14s">
+        <div class="logo-halo"></div>
+        <div class="logo-glass-ring"></div>
+        <img src="klado-logo.png" alt="Klado AI logo" class="hero-logo" />
+      </div>
+
+      <p class="eyebrow reveal" style="--d: .22s">Klado AI · Private preview</p>
+
+      <h1 class="headline reveal" style="--d: .32s">
+        AI that feels <em>effortless.</em>
+      </h1>
+
+      <p class="subhead reveal" style="--d: .44s">
+        A new intelligent workspace for ideas, agents, and modern work.
+      </p>
+
+      <form class="waitlist liquid-panel reveal" id="waitlistForm" style="--d: .56s" novalidate>
+        <label class="sr-only" for="emailInput">Email address</label>
+        <input
+          id="emailInput"
+          type="email"
+          autocomplete="email"
+          spellcheck="false"
+          placeholder="you@company.com"
+          required
+        />
+        <button class="liquid-button" id="ctaBtn" type="submit">
+          <span class="button-shine"></span>
+          <span class="button-text">Join the waitlist ✨</span>
+        </button>
+      </form>
+
+      <p class="field-error" id="emailError" role="alert" hidden>
+        Please enter a valid email address.
+      </p>
+
+      <div class="success liquid-panel" id="waitlistSuccess" role="status" hidden>
+        <span class="success-orb">✓</span>
+        You're on the list. We'll be in touch soon.
+      </div>
+
+      <p class="trust reveal" style="--d: .68s">
+        Launching soon · Built for founders, creators, and teams
+      </p>
+    </section>
+
+    <footer class="footer reveal" style="--d: .8s">
+      © 2026 Klado AI
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp index.html styles.css script.js klado-logo.png public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - klado-coming-soon
